@@ -16,14 +16,15 @@ const AnimeList = (props) => {
       },[])
 
     return(
+        <div className="container">
         <div className="animeListContainer">
             {
                 list.map(anime => {
                     return (
                         <div className="anime list" key={anime.anime_id}>
-                            <h2>{anime.anime_name}</h2>
+                            <h2>{anime.anime_name.toUpperCase().replace(/_/g," ")}</h2>
                             <Link to={`/anime/${anime.anime_name}`}>
-                                <img src={anime.anime_img}/>
+                                <img className="listImg" src={anime.anime_img}/>
                             </Link>
                         </div>
                     )
@@ -31,6 +32,7 @@ const AnimeList = (props) => {
             }
             
 
+        </div>
         </div>
     )
 }

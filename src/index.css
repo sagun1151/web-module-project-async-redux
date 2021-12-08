@@ -1,8 +1,56 @@
 
 body {
-	background: #f5f5f5;
+	background: #1F2833;
 }
 
 .animeHeader {
-	background:red;
+	color:#45A29E;
+	text-decoration: none;
+}
+.link{
+	color:#45A29E;
+	padding: 3px;
+	background-color: white;
+}
+
+h2 {
+	color:#66FCF1;
+}
+p{
+	color:#66FCF1;
+}
+.container{
+	display:flex;
+	justify-content: space-between;
+}
+.animeListContainer{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+
+}
+.listImg{
+    width:  350px;
+    height: 350px;
+    object-fit: contain;
+	/* object-fit: cover; */
+}
+
+.animeImg{
+    width:  700px;
+    height: 700px;
+    object-fit: contain;
+	margin-bottom:15px;
+}
+.animeFacts {
+	display:flex;
+	flex-direction:column;
+	align-items: center;
+	
+}
+.info{
+	width:80%;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }

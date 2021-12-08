@@ -5,7 +5,7 @@ const AnimeHeader = () => {
     return ( 
         <div className="animeHeader">
               <h1>Some Cool Anime Facts</h1>
-                <Link to="/anime"> See All</Link>
+                <Link className = "link" to="/anime"> See All</Link>
         </div>
     )
 }

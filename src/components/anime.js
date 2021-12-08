@@ -23,13 +23,18 @@ const Anime = (props) => {
 
     return(
         <div className='animeFacts'>
-            <h2>{id}</h2>
-            <img src={props.animeImg} />
+            <div>
+            <h2>{id.toUpperCase().replace(/_/g," ")}</h2>
+            <img className="animeImg"src={props.animeImg} />
+            </div>
+            
+            <div className="info">
             {
                 animePick.map(anime => {
                     return (<p key={anime.fact_id}>{`${anime.fact_id}: ${anime.fact}`}</p>)
                 })
             }
+            </div>
         </div>
     )    
 
