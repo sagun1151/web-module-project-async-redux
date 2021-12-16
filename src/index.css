@@ -6,6 +6,8 @@ body {
 .animeHeader {
 	color:#45A29E;
 	text-decoration: none;
+	margin-bottom: 10px;
+	padding:3px;
 }
 .link{
 	color:#45A29E;
@@ -27,7 +29,9 @@ p{
 	display:flex;
 	flex-wrap: wrap;
 	justify-content: space-evenly;
-
+}
+.animeList{
+	margin:10px 0 10px 0;	
 }
 .listImg{
     width:  350px;
